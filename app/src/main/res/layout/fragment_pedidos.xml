@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="270dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retangulo_azul" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/poppins_medio"
+        android:text="Pedidos"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="40dp">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medio"
+                android:text="13 Eur"
+                android:textColor="#354C7B"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                app:layout_constraintEnd_toEndOf="@+id/recyclerView2"
+                app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_normal"
+                android:text="Adicionar ao total"
+                android:textColor="#0C314C"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/recyclerView2"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_medio"
+                android:text="Em confecção"
+                android:textColor="#0D1863"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IniciarPedido" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="322dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+                app:layout_constraintStart_toStartOf="@+id/recyclerView"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                tools:listitem="@layout/row_pedido" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/poppins_medio"
+                android:text="No pedido"
+                android:textColor="#0D1863"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_normal"
+                android:text="Adicionar ao total"
+                android:textColor="#0C314C"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/recyclerView"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/FinalizarRefeicao"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#0C314C"
+                android:fontFamily="@font/poppins_normal"
+                android:text="Finalizar Refeição"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/recyclerView"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="320dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="33dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+
+                tools:listitem="@layout/row_pedido" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_normal"
+                android:text="Adicionar ao total"
+                android:textColor="#0C314C"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/recyclerView"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+            <TextView
+                android:id="@+id/TotalPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/poppins_normal"
+                android:text="13 Eur"
+                android:textColor="#354C7B"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+                app:layout_constraintTop_toTopOf="@+id/textView5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/IniciarPedido"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#0C314C"
+                android:fontFamily="@font/poppins_normal"
+                android:text="Iniciar Pedido"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/recyclerView"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/limpar"
+                android:layout_width="103dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="#0C314C"
+                android:fontFamily="@font/poppins_normal"
+                android:text="Limpar"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.878"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

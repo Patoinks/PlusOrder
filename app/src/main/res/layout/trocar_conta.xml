@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fund3"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="362dp"
+        android:layout_height="419dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button4"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#F3F0F0"
+        android:fontFamily="@font/poppins_normal"
+        android:text="QR Code"
+        android:textAllCaps="false"
+        android:textColor="#0C314C"
+        android:textSize="20dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button3"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#0C314C"
+        android:fontFamily="@font/poppins_normal"
+        android:text="Ementa"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="140dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="43dp"
+        android:background="#2E2D2D"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/cornerSize" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="242dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#0C314C"
+        android:fontFamily="@font/poppins_normal"
+        android:text="Trocar Conta"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/poppins_n"
+        android:text="Sr. Coutinho"
+        android:textColor="#0C314C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

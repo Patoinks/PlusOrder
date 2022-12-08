@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp">
+
+    <ImageView
+        android:id="@+id/ImagemPedido"
+        android:layout_width="92dp"
+        android:layout_height="58dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/NomePedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_normal"
+        android:text="Exemplo"
+        android:textColor="#0C314C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ImagemPedido"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tPrecoPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="5,00 Eur"
+        android:textAllCaps="false"
+        android:textColor="#0C314C"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/NomePedido"
+        app:layout_constraintTop_toBottomOf="@+id/NomePedido" />
+</androidx.constraintlayout.widget.ConstraintLayout>

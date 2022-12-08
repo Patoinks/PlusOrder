@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="140dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="21dp"
+    android:paddingRight="-70dp"
+    android:background="@drawable/rounded_corners"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/FavoritarImagem"
+        android:layout_width="122dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Like"
+        android:layout_width="19dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_baseline_favorite_24"
+        android:backgroundTint="#ED6896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

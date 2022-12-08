@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        android:alpha="0.6"
+        android:background="@color/azul"
+        android:elevation="-5dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        android:background="@android:color/transparent"
+        android:elevation="20dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="628dp"
+            android:background="@android:color/transparent"
+            android:elevation="20dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="416dp"
+                android:layout_height="679dp"
+
+                android:background="@drawable/background_fragmentdetails"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/adicionarPedido"
+                android:layout_width="242dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="136dp"
+                android:backgroundTint="#0C314C"
+                android:fontFamily="@font/poppins_normal"
+                android:text="Adicionar ao Pedido"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageDetail"
+                android:layout_width="290dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="60dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nomeDetalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_black"
+                android:text="Francesinha Portuguesa"
+                android:textColor="#0C314C"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageDetail"
+                app:layout_constraintStart_toStartOf="@+id/imageDetail"
+                app:layout_constraintTop_toBottomOf="@+id/imageDetail" />
+
+            <TextView
+                android:id="@+id/precoPrato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_n"
+                android:text="9,59€"
+                android:textColor="#0C314C"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/nomeDetalhe"
+                app:layout_constraintStart_toStartOf="@+id/nomeDetalhe"
+                app:layout_constraintTop_toBottomOf="@+id/nomeDetalhe" />
+
+            <TextView
+                android:id="@+id/descricao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="47dp"
+                android:fontFamily="@font/poppins_normal"
+                android:text="Lombo de boi, fiambre, paio, bacon, salsicha fresca, queijo, ovo  e o nosso molho"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/precoPrato" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/favoritar"
+                android:layout_width="44dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="40dp"
+                android:backgroundTint="#FFCA61"
+                android:elevation="1dp"
+                android:text=""
+                android:visibility="visible"
+                app:cornerRadius="999dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="textEnd"
+                app:iconPadding="0.8dp"
+                app:iconSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/favoritado"
+                android:layout_width="44dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="40dp"
+                android:backgroundTint="#ED6896"
+                android:elevation="1dp"
+                android:text=""
+                android:visibility="gone"
+                app:cornerRadius="999dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="textEnd"
+                app:iconPadding="0.8dp"
+                app:iconSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

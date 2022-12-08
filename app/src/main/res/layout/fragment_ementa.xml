@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zxing_transparent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:background="@drawable/rounded_corners_blue">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:fontFamily="@font/poppins_medio"
+                android:text="Mesa:"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/numeroMesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_medio"
+                android:text="Ler QR"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <Button
+
+                        android:id="@+id/CategoriaSobremesa"
+                        style="@style/POButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins_medio"
+                        android:text="Sobremesas"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/CategoriaPratos"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/CategoriaPratos"
+                        style="@style/POButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/poppins_medio"
+                        android:text="Pratos"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.039"
+                        app:layout_constraintStart_toEndOf="@+id/CategoriaEntrada"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/CategoriaEntrada"
+                        style="@style/POButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="21dp"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:fontFamily="@font/poppins_medio"
+                        android:text="Entradas"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/CategoriaBebidas"
+                        style="@style/POButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:minWidth="48dp"
+                        android:text="Bebidas"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/CategoriaSobremesa"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.533" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/CategoriaEscolhida"
+                style="@style/POTextViewStyle"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/poppins_black"
+                android:text="Sobremesas"
+                android:textAlignment="textStart"
+                android:textColor="@color/azul"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/pesquisinha"
+                style="@style/POTextViewStyle"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/martim"
+                android:elevation="3dp"
+                android:hint="Pesquisa"
+                android:paddingLeft="15dp"
+                android:paddingTop="4dp"
+                android:textColorHint="@color/azul">
+
+            </EditText>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/EmentaRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="503dp"
+            app:tabIndicatorColor="@color/orange"
+            app:tabSelectedTextColor="@color/orange"
+            app:tabTextColor="@color/black"
+            tools:listitem="@layout/ementa_prato" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

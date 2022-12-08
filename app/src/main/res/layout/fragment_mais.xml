@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/nav_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/retangulo_azul" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="-190dp"
+            android:background="@drawable/rounder_corners_gray"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+
+
+            <ImageView
+                android:id="@+id/UserImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Apresentar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="OLÁ,"
+                    android:textColor="@color/azul"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/UserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="OLÁ"
+                    android:textColor="@color/azul"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/btHistorico"
+            style="@style/POButtonStyle"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="75dp"
+            android:drawableLeft="@drawable/icon_historico"
+            android:drawablePadding="20dp"
+            android:drawableTint="@color/azul"
+            android:fontFamily="@font/poppins_fino"
+            android:text="Histórico"
+            android:textColor="@color/azul"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btContactos"
+            style="@style/POButtonStyle"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_contactos"
+            android:drawableTint="@color/azul"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins_fino"
+            android:text="Contactos"
+            android:textColor="@color/azul"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btFaturas"
+            style="@style/POButtonStyle"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_faturas"
+            android:drawableTint="@color/azul"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins_fino"
+            android:text="Faturas"
+            android:textColor="@color/azul"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btDefinicoes"
+            style="@style/POButtonStyle"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_definicoes"
+            android:drawableTint="@color/azul"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins_fino"
+            android:text="Definições"
+            android:textColor="@color/azul"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btQrCode"
+            style="@style/POButtonStyle"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_qrcode"
+            android:drawableTint="@color/azul"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins_fino"
+            android:text="Qr Code"
+            android:textColor="@color/azul"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btSairConta"
+            style="@style/POButtonStyle"
+            android:layout_width="232dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="45dp"
+            android:drawableLeft="@drawable/icon_sair"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/poppins_fino"
+            android:text="Sair da Conta"
+            android:textColor="@color/azul"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</FrameLayout>
